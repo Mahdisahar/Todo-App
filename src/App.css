@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+
+.App {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh; 
+	height: 100%;
+	background-color: #282c34;
+}
+.container {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 80vh;
+	border: 1px solid gray;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.todoForm {
+	display: flex;
+	justify-content: space-around;
+	width: 450px;
+}
+
+input {
+	width: 80%;
+	padding: 10px;
+	border: none;
+	border-radius: 20px;
+}
+
+button {
+	border: none;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 0 5px;
+}
+.allTodo {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.singleTodo {
+	border-radius: 50px;
+	align-items: center;
+	padding: 10px 20px;
+	display: flex;
+	width: 450px;
+	margin: 10px 0;
+	background-color: #5dadf8;
+}
+.todoText {
+	flex: 1;
+}
+
+ @media screen and (max-width:425px) {
+	.container {
+		padding: 10px 0;
+	}
+	.todoForm {
+		width: 400px;
+	}
+	.singleTodo {
+		width: 400px;
+	}
+	
+}
+
+
+@media screen and (max-width:375px) {
+	
+	.todoForm {
+		width: 350px;
+	}
+	.singleTodo {
+		width: 350px;
+	}
+	
+}
+
+@media screen and (max-width:320px) {
+	
+	.todoForm {
+		width: 300px;
+	}
+	.singleTodo {
+		width: 300px;
+	}
+	
+}
